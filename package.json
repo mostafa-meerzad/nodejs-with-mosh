@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-with-mosh",
+  "version": "1.0.0",
+  "description": "learning how to make backend servers and make better apps",
+  "main": "app.js",
+  "type":"module",
+  "author": "mostafa meerzad",
+  "license": "ISC"
+}
