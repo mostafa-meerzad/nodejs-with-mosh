@@ -9,7 +9,17 @@
 
 //  -------------------------- modern js --------------------------
 
-import { logger } from "./nodeModuleSystem/log.js";
+// import { logger } from "./nodeModuleSystem/log.js";
 
-console.log("calling logger module")
-logger("logger module says Hello!")
+// console.log("calling logger module")
+// logger("logger module says Hello!")
+
+const Logger = require("./nodeModuleSystem/logger");
+
+const logger = new Logger();
+logger.on("message logged", (arg) => {
+  console.log(arg);
+});
+
+logger.log("a message for logger method");
+// console.log(Logger)
